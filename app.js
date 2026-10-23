@@ -10,7 +10,7 @@
    if(active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
   });
   document.getElementById('locationLabel').textContent=titles[page];
-  document.getElementById('webStatus').textContent=page==='download'?'Pobieranie MINEVORA 18.3.2':page==='home'?'Strona gotowa do przeglądania':titles[page];
+  document.getElementById('webStatus').textContent=page==='download'?'Pobieranie MINEVORA 18.3.3':page==='home'?'Strona gotowa do przeglądania':titles[page];
   window.scrollTo({top:0,behavior:'auto'});
  }
  document.addEventListener('click',event=>{
