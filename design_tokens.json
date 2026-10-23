@@ -1,0 +1,16 @@
+{
+  "name": "MINEVORA ENCHANTED 18.3",
+  "version": "18.3",
+  "background": "#090F22",
+  "sidebar": "#0D142B",
+  "surface": "#141A35",
+  "surface_alt": "#1A2041",
+  "border": "#61458F",
+  "text": "#F7F2FF",
+  "muted": "#B5ADD5",
+  "primary": "#8B4DF1",
+  "primary_light": "#B96CFF",
+  "primary_deep": "#5730B1",
+  "cyan": "#4BCFEC",
+  "good": "#57DCB1"
+}
