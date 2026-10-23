@@ -121,3 +121,12 @@ body,.shell{background:var(--mn-bg);color:var(--mn-text)}
 .compat-matrix strong { font-size:14px; color:#b8c5da; font-weight:600; }
 .compat-matrix .is-supported { color:#73ebac; }
 @media(max-width:650px){.compat-matrix>div {grid-template-columns:1fr;gap:6px;padding:14px}}
+
+/* MINEVORA PvP HUD 2.0.8 — publiczne wydanie */
+.mod208-card{margin:22px 0 28px;padding:24px 27px;border:1px solid #7950bd;border-radius:16px;background:linear-gradient(115deg,#251443,#141c37 83%);box-shadow:0 16px 35px #09062168}
+.mod208-card .mod208-meta{font-weight:800;letter-spacing:1.2px;color:#cba4ff;font-size:10px}
+.mod208-card h2{margin:12px 0;color:#f9f3ff;font-size:clamp(21px,2.4vw,29px)}
+.mod208-card p{color:#d1c8e6;font-size:13px;line-height:1.8;max-width:920px}
+.mod208-card kbd{padding:2px 7px;border:1px solid #74529e;background:#211832;color:#fff;border-radius:5px}
+.mod208-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:17px}.mod208-actions a{display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:590px){.mod208-card{padding:19px 14px}.mod208-actions{flex-direction:column}.mod208-actions a{width:100%;text-align:center}}
