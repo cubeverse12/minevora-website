@@ -130,3 +130,37 @@ body,.shell{background:var(--mn-bg);color:var(--mn-text)}
 .mod208-card kbd{padding:2px 7px;border:1px solid #74529e;background:#211832;color:#fff;border-radius:5px}
 .mod208-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:17px}.mod208-actions a{display:inline-flex;align-items:center;justify-content:center}
 @media(max-width:590px){.mod208-card{padding:19px 14px}.mod208-actions{flex-direction:column}.mod208-actions a{width:100%;text-align:center}}
+
+
+/* MINEVORA — poprawa prezentacji grafik, strona główna */
+#homeScreen img, .sidebar img, .topbar img {
+  image-rendering:auto;
+  -ms-interpolation-mode:bicubic;
+}
+#homeScreen .feature-head img,
+#homeScreen .identity-card > img,
+.sidebar .nav-link img,
+.topbar .top-cta img {
+  object-fit:contain;
+  flex-shrink:0;
+}
+#homeScreen .update-home-main > img {
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:520px;
+  object-fit:contain;
+  object-position:center;
+}
+#homeScreen .hero-backdrop {
+  background-position:center;
+  background-repeat:no-repeat;
+}
+#homeScreen .character-stage {
+  isolation:isolate;
+}
+@media (max-width:760px) {
+  #homeScreen .update-home-main > img {
+    max-height:none;
+  }
+}
