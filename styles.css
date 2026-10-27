@@ -164,3 +164,86 @@ body,.shell{background:var(--mn-bg);color:var(--mn-text)}
     max-height:none;
   }
 }
+
+
+/* MINEVORA WEB 2026-10-27 — spójny wygląd z launcherem */
+:root{
+  --mv-ink:#070b1d;--mv-surface:#11152e;--mv-surface-2:#171638;
+  --mv-line:#55377f;--mv-purple:#a347ff;--mv-lavender:#d4afff;
+}
+.mv-showcase{margin:32px 0 36px}
+.mv-showcase-heading{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:0 2px 20px}
+.mv-showcase-heading h2{font-size:clamp(25px,3vw,38px);line-height:1.16;letter-spacing:-.5px;margin:10px 0 9px;color:#f8f3ff}
+.mv-showcase-heading p{max-width:700px;color:#bfc0d7;line-height:1.7;margin:0}
+.mv-preview-window{display:grid;grid-template-columns:186px minmax(0,1fr);overflow:hidden;background:#090e22;border:1px solid #67439e;border-radius:18px;box-shadow:0 18px 60px #060416af,0 0 42px #7031c51c}
+.mv-preview-menu{padding:22px 12px;background:linear-gradient(180deg,#0b0f29,#130d2f);border-right:1px solid #453371;display:flex;flex-direction:column;gap:5px;color:#c8c1e5}
+.mv-preview-brand{display:flex;align-items:center;gap:9px;padding:0 3px 19px;color:#f5edff;letter-spacing:.6px;font-size:13px}
+.mv-preview-brand img{width:34px;height:34px;object-fit:contain;filter:drop-shadow(0 0 10px #b55aff66)}
+.mv-preview-menu-label{font-size:10px;color:#847ca7;font-weight:800;letter-spacing:1.5px;margin:0 10px 9px}
+.mv-preview-menu>span:not(.mv-preview-menu-label){padding:10px 12px;font-weight:700;font-size:11px;border:1px solid transparent;border-radius:9px;white-space:nowrap}
+.mv-preview-menu>.mv-preview-active{background:linear-gradient(110deg,#59259d,#35206f);border-color:#b075fa!important;color:#fff;box-shadow:0 0 15px #9641ff36}
+.mv-preview-content{padding:0 16px 16px;min-width:0;background:linear-gradient(180deg,#080d25,#080916)}
+.mv-preview-toolbar{display:flex;align-items:center;gap:27px;min-height:54px;color:#b6b1d1;border-bottom:1px solid #392c68;padding:0 16px;font-size:12px;white-space:nowrap;overflow:auto}
+.mv-preview-toolbar strong{color:white;position:relative;padding:18px 0}
+.mv-preview-toolbar strong:after{content:"";height:2px;position:absolute;bottom:0;left:0;right:0;background:#b45cff}
+.mv-preview-art{height:242px;margin-top:12px;border-radius:13px 13px 2px 2px;border:1px solid #684092;border-bottom:0;position:relative;overflow:hidden;background:linear-gradient(180deg,#13082b22 15%,#1b0b3977 65%,#0b0c24 100%),url('assets/enchanted_hero.jpg') center 48%/cover no-repeat}
+.mv-preview-art-inner{height:100%;position:relative;display:flex;align-items:center;justify-content:flex-start;flex-direction:column;padding-top:31px;text-align:center;text-shadow:0 4px 18px #100321}
+.mv-preview-art-inner span{font-size:10px;font-weight:800;letter-spacing:2px;color:#f4d4ff}
+.mv-preview-art-inner strong{font-size:clamp(29px,4.4vw,59px);font-weight:950;letter-spacing:3px;line-height:1.2;color:#fff2ff;-webkit-text-stroke:1px #a761ff;text-shadow:0 4px 0 #390b6b,0 8px 18px #0a0415,0 0 32px #9b39e1}
+.mv-preview-art-inner small{letter-spacing:3px;font-size:10px;font-weight:900;color:#f8e7ff}
+.mv-preview-controls{min-height:102px;display:grid;grid-template-columns:180px 1fr 128px;align-items:center;gap:15px;padding:12px;background:#0c0c23;border:1px solid #684092;border-top:0;border-radius:0 0 13px 13px}
+.mv-preview-settings{display:grid;gap:6px}
+.mv-preview-settings>span{display:block;font-size:9px;color:#bca0e7;background:#14142d;border:1px solid #65438e;border-radius:8px;padding:8px 9px;font-weight:800;letter-spacing:.5px}
+.mv-preview-settings b{display:block;font-size:11px;color:white;letter-spacing:0;margin-top:4px}
+.mv-preview-play{justify-self:center;display:inline-flex;justify-content:center;align-items:center;font-size:clamp(15px,2.1vw,22px);font-weight:900;letter-spacing:1px;min-height:59px;border-radius:12px;padding:12px 22px;background:linear-gradient(160deg,#bf52ff,#6b17d3);border:1px solid #e7a6ff;box-shadow:0 0 26px #a03bff66;color:white;text-align:center}
+.mv-preview-play:hover{filter:brightness(1.1)}
+.mv-preview-footnote{font-size:11px;color:#b4a5d5;text-align:right;line-height:1.5}
+.mv-showcase-disclaimer{margin:12px 2px 0;color:#a5a6c6;font-size:11px;line-height:1.6}
+.mv-modules-banner{position:relative;overflow:hidden;padding:42px 38px;border:1px solid #7552b2;border-radius:17px;background:linear-gradient(100deg,#12102af2 0%,#16103ddf 59%,#22113c85 100%),url('assets/enchanted_hero.jpg') center 40%/cover no-repeat;box-shadow:0 24px 55px #06031599}
+.mv-modules-banner h1{font-size:clamp(29px,4vw,48px);line-height:1.1;margin:16px 0;color:#fff}
+.mv-modules-banner h1 em{font-style:normal;color:#c498ff}
+.mv-modules-banner p{max-width:660px;color:#e1d9f5;font-size:14px;line-height:1.75;margin-bottom:22px}
+.mv-filter-bar{display:flex;flex-wrap:wrap;gap:8px;padding:22px 0 18px}
+.mv-filter{border:1px solid #534077;border-radius:9px;color:#cec6e8;background:#15152f;min-height:40px;padding:10px 16px;font-weight:750;font-size:12px}
+.mv-filter:hover{background:#322056;color:white}
+.mv-filter.active{background:linear-gradient(110deg,#8f39f5,#5722af);border-color:#bd80fc;color:#fff;box-shadow:0 6px 22px #8f39f53b}
+.mv-module-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.mv-module-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;border-radius:16px;border:1px solid #423365;background:linear-gradient(145deg,#161936,#0e1027);box-shadow:0 10px 25px #07091c4d;transition:border-color .2s,transform .2s,box-shadow .2s}
+.mv-module-card:hover{border-color:#9e60ed;transform:translateY(-3px);box-shadow:0 16px 36px #090319aa}
+.mv-module-card[hidden]{display:none!important}
+.mv-module-picture,.mv-module-placeholder{height:158px;overflow:hidden;background:radial-gradient(ellipse at 50% 40%,#5c2586 0%,#201445 47%,#0c112b 100%)}
+.mv-module-picture img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+.mv-module-placeholder{display:grid;place-items:center}
+.mv-module-placeholder img{width:74px;height:74px;object-fit:contain;filter:drop-shadow(0 0 24px #8c4cff80)}
+.mv-module-body{padding:17px 18px 19px;flex:1;display:flex;flex-direction:column}
+.mv-module-title{display:flex;align-items:center;gap:10px}
+.mv-module-title img{width:28px;height:28px;object-fit:contain}
+.mv-module-title h2{margin:0;color:#fbf8ff;font-size:17px;line-height:1.25}
+.mv-module-body>p{margin:12px 0 19px;font-size:12px;color:#b5b6d2;line-height:1.7;flex:1}
+.mv-module-status{align-self:flex-start;display:inline-flex;border:1px solid #594087;background:#241c42;color:#d8bcff;font-size:10px;font-weight:850;padding:7px 10px;border-radius:7px;letter-spacing:.25px}
+.mv-modules-info{margin-top:20px;padding:23px 25px;border:1px solid #453568;border-radius:13px;background:#10132b}
+.mv-modules-info strong{font-size:17px;color:#f7f0ff}
+.mv-modules-info p{font-size:12px;line-height:1.75;color:#bfc0d6;max-width:950px}
+.mv-modules-info a{margin-top:6px}
+@media(max-width:1100px){
+ .mv-module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .mv-preview-controls{grid-template-columns:170px minmax(0,1fr)}
+ .mv-preview-footnote{display:none}
+}
+@media(max-width:760px){
+ .mv-showcase-heading{align-items:flex-start;flex-direction:column;gap:12px}
+ .mv-preview-window{grid-template-columns:1fr}
+ .mv-preview-menu{display:none}
+ .mv-preview-content{padding:0 9px 9px}
+ .mv-preview-toolbar{gap:18px;padding:0 8px;font-size:11px}
+ .mv-preview-art{height:210px}
+ .mv-preview-art-inner{padding-top:30px}
+ .mv-preview-controls{grid-template-columns:1fr;gap:10px}
+ .mv-preview-settings{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .mv-preview-play{justify-self:stretch;font-size:16px;min-height:50px}
+ .mv-module-grid{grid-template-columns:1fr}
+ .mv-modules-banner{padding:30px 22px}
+}
+@media(prefers-reduced-motion:reduce){
+ .mv-module-card,.mv-preview-play,.mv-filter{transition:none}
+}
